@@ -44,7 +44,7 @@ TelegramTextExtractor is a simple console application written in C# that facilit
 
 ## Notice
 
-This program is part of a larger NLP project which you can get the details for over at my [Telegram](t.me/dotnetWarrior), You can also check out my [Youtube](youtube.com/@kerverse) for more content.
+This program is part of a larger NLP project which you can get the details for over at my [Telegram](https://t.me/dotnetWarrior), You can also check out my [Youtube](https://youtube.com/@kerverse) for more content.
 
 ## Disclaimer
 
