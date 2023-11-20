@@ -42,6 +42,10 @@ TelegramTextExtractor is a simple console application written in C# that facilit
 
 5. Specify the Output root path(if applicable) and paste the path to the chat export json.
 
+## Notice
+
+This program is part of a larger NLP project which you can get the details for over at my (Telegram)[t.me/dotnetWarrior], You can also check out my (Youtube)[youtube.com/@kerverse] for more content.
+
 ## Disclaimer
 
 TelegramTextExtractor is provided as-is, without any warranty. Use it responsibly and ensure compliance with Telegram's terms of service.
