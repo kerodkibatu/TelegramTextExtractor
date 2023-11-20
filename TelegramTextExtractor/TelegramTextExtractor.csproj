@@ -5,7 +5,28 @@
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <Title>Telegram Text Extractor</Title>
+    <Authors>Kerod Kibatu</Authors>
+    <Company>KerVerse</Company>
+    <Description>TelegramTextExtractor is a powerful text extraction tool designed to streamline the process of converting Telegram chat history export data in JSON format into a cohesive and continuous corpus.</Description>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/kerodkibatu/TelegramTextExtractor</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>NLP;Data Processor;Telegram Extractor;Amharic NLP;KerVerse;Kerod Kibatu</PackageTags>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <PackageProjectUrl>https://github.com/kerodkibatu/TelegramTextExtractor</PackageProjectUrl>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
