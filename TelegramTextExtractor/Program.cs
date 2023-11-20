@@ -1,12 +1,15 @@
 ﻿using System.Text;
 using System.Text.Json;
+Console.Write("Enter custom output root path(defaults to 'C:/TTE_Outputs/' if left empty): ");
+var baseRoot = Console.ReadLine();
 while (true)
 {
     Console.Write("Path to json: ");
     var path = Console.ReadLine()!;
-    Extract(path);
+    if (baseRoot is null) Extract(path);
+    else Extract(path, baseRoot);
 }
-void Extract(string path)
+void Extract(string path, string outputRootPath = "C:/TTE_Outputs")
 {
     if (path.StartsWith('"'))
         path = path.Substring(1, path.Length - 2);
@@ -22,7 +25,7 @@ void Extract(string path)
         Console.WriteLine("The file is not in correct format!");
         return;
     }
-    var saveTo = Path.Combine("C:\\Users\\Kerod\\Desktop\\Amharic Datasets\\Telegram", channel.name.Replace("/", "").Replace(".", "").Replace("|", "") + ".txt");
+    var saveTo = Path.Combine(outputRootPath, channel.name.TakeWhile(char.IsAscii) + ".txt");
     var corpus = new StringBuilder();
     if (Path.Exists(saveTo))
     {
